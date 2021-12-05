@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Butthesda_Wpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Butthesda" Height="450" Width="800">
     <Grid>
-
+        <TabControl>
+            <TabItem Header="Select Game" >
+                <local:SelectGame />
+            </TabItem>
+            <TabItem Header="Scan for Devices" >
+                <local:ScanDevices />
+            </TabItem>
+            <TabItem Header="Configure Devices" >
+                <local:ConfigureDevices />
+            </TabItem>
+            <TabItem Header="Event Log" >
+                
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>
